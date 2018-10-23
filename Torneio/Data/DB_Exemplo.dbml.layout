@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DB_Exemplo">
+  <DataContextMoniker Name="/DB_TorneioDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6e407468-6c22-4d5c-8b9c-fb9da1be683b" absoluteBounds="0.75, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/DB_TorneioDataContext/Time" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7278e409-b8dd-4a87-89ee-f3d4d9134582" absoluteBounds="0.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="66524660-4aff-44c6-a87a-9f74a8872e52" absoluteBounds="1.25, 0.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/DB_TorneioDataContext/Torneio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8eaa09d2-022a-4b2f-84d1-8f016fb33a82" absoluteBounds="1.2650000000000001, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="923de754-233e-492d-970f-fe221735d43d" absoluteBounds="4.125, 1.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/DB_TorneioDataContext/Partida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c17f7ce4-2271-405f-a34a-19d4f7a5db30" absoluteBounds="4.14, 2.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.25 : 1.3124995); (5.125 : 1.3124995); (5.125 : 1.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/DB_TorneioDataContext/Torneio/Torneio_Partida" />
+      <nodes>
+        <classShapeMoniker Id="66524660-4aff-44c6-a87a-9f74a8872e52" />
+        <classShapeMoniker Id="923de754-233e-492d-970f-fe221735d43d" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

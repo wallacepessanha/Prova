@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{816ADF7D-54EB-4ED5-85F0-A835C52E11E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{3F7D0B9E-EF29-497F-B8A1-BAD721EA60A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EndPoints", "EndPoints", "{37D331D9-6A24-453E-A527-7DFE6CDD1EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{647272B8-CDC1-4662-AE2E-DCB5221D6932}"
+	ProjectSection(ProjectDependencies) = postProject
+		{81667394-FC31-4993-927A-7D3F1B7090E6} = {81667394-FC31-4993-927A-7D3F1B7090E6}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{881EF3DC-4083-4425-A3B9-8451DC4B62EA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apresentacao", "Apresentacao", "{670AC214-D4E7-42CB-8A54-454526122AB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{54169325-A407-42A1-B046-38EBFBF09251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTSM", "WebApiTSM\WebApiTSM.csproj", "{D54B0F2A-832A-4EB0-B78D-021A9D096A50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilizaveis", "Utilizaveis", "{12A0404B-EF9B-4531-B997-D94B41667754}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Util", "Util\Util.csproj", "{81667394-FC31-4993-927A-7D3F1B7090E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{647272B8-CDC1-4662-AE2E-DCB5221D6932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{647272B8-CDC1-4662-AE2E-DCB5221D6932}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{647272B8-CDC1-4662-AE2E-DCB5221D6932}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{647272B8-CDC1-4662-AE2E-DCB5221D6932}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881EF3DC-4083-4425-A3B9-8451DC4B62EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881EF3DC-4083-4425-A3B9-8451DC4B62EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881EF3DC-4083-4425-A3B9-8451DC4B62EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881EF3DC-4083-4425-A3B9-8451DC4B62EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54169325-A407-42A1-B046-38EBFBF09251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54169325-A407-42A1-B046-38EBFBF09251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54169325-A407-42A1-B046-38EBFBF09251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54169325-A407-42A1-B046-38EBFBF09251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54B0F2A-832A-4EB0-B78D-021A9D096A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54B0F2A-832A-4EB0-B78D-021A9D096A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54B0F2A-832A-4EB0-B78D-021A9D096A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54B0F2A-832A-4EB0-B78D-021A9D096A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81667394-FC31-4993-927A-7D3F1B7090E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81667394-FC31-4993-927A-7D3F1B7090E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81667394-FC31-4993-927A-7D3F1B7090E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81667394-FC31-4993-927A-7D3F1B7090E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{647272B8-CDC1-4662-AE2E-DCB5221D6932} = {816ADF7D-54EB-4ED5-85F0-A835C52E11E6}
+		{E7623DD9-73A4-41B5-B9D5-2DA25EFC734C} = {816ADF7D-54EB-4ED5-85F0-A835C52E11E6}
+		{881EF3DC-4083-4425-A3B9-8451DC4B62EA} = {3F7D0B9E-EF29-497F-B8A1-BAD721EA60A3}
+		{54169325-A407-42A1-B046-38EBFBF09251} = {670AC214-D4E7-42CB-8A54-454526122AB0}
+		{D54B0F2A-832A-4EB0-B78D-021A9D096A50} = {37D331D9-6A24-453E-A527-7DFE6CDD1EC4}
+		{81667394-FC31-4993-927A-7D3F1B7090E6} = {12A0404B-EF9B-4531-B997-D94B41667754}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95749EFA-D647-4401-8317-6DA5A1822BFD}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lvmendes.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Data\\Data.csproj
+		SccProjectTopLevelParentUniqueName1 = Torneio.sln
+		SccProjectName1 = Data
+		SccLocalPath1 = Data
+		SccProjectUniqueName2 = Logic\\Logic.csproj
+		SccProjectTopLevelParentUniqueName2 = Torneio.sln
+		SccProjectName2 = Logic
+		SccLocalPath2 = Logic
+		SccProjectUniqueName3 = Test\\Test.csproj
+		SccProjectTopLevelParentUniqueName3 = Torneio.sln
+		SccProjectName3 = Test
+		SccLocalPath3 = Test
+		SccProjectUniqueName4 = Web\\Web.csproj
+		SccProjectTopLevelParentUniqueName4 = Torneio.sln
+		SccProjectName4 = Web
+		SccLocalPath4 = Web
+		SccProjectUniqueName5 = WebApiTSM\\WebApiTSM.csproj
+		SccProjectTopLevelParentUniqueName5 = Torneio.sln
+		SccProjectName5 = WebApiTSM
+		SccLocalPath5 = WebApiTSM
+		SccProjectUniqueName6 = Util\\Util.csproj
+		SccProjectTopLevelParentUniqueName6 = Torneio.sln
+		SccProjectName6 = Util
+		SccLocalPath6 = Util
+	EndGlobalSection
+EndGlobal

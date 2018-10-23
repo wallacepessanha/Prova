@@ -1,0 +1,41 @@
+﻿
+@model List<Logic.Model.TimeModel>
+
+
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+
+
+            <table style="width:100%">
+                <thead style="background-color:aquamarine;">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody style="background-color:cyan;">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Nome</td>
+                            <td></td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+
+
+
+        </form>
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a href="/Time/Index"><span class="icon-picture"></span></a>
+        </div>
+    </div>
+</div>

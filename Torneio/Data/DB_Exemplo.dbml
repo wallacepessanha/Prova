@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="torneiosm" Class="DB_TorneioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=den1.mssql6.gear.host;Initial Catalog=torneiosm;Persist Security Info=True;User ID=torneiosm" SettingsObjectName="Data.Properties.Settings" SettingsPropertyName="torneiosmConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Times" Member="Times">
+    <Type Name="Time">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Torneios" Member="Torneios">
+    <Type Name="Torneio">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Torneio_Partida" Member="Partidas" ThisKey="Id" OtherKey="TorneioId" Type="Partida" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Partidas" Member="Partidas">
+    <Type Name="Partida">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GolsTimeA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GolsTimeB" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TorneioId" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TimeB" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Realizado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Torneio_Partida" Member="Torneio" ThisKey="TorneioId" OtherKey="Id" Type="Torneio" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

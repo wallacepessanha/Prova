@@ -1,0 +1,56 @@
+﻿@model Logic.Model.TorneioModel
+<script src="~/Scripts/Controller/TorneioJS.js"></script>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<script src="~/Scripts/Controller/PartidaJS.js"></script>
+@{
+    var json = @Html.Raw(Json.Encode(Model));
+}
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+
+
+
+            
+
+            @Html.Hidden("TorneioId", Model.Id)
+            @Html.Hidden("model", json)
+            <table style="color: red; width:100%">
+
+                @for (int i = 0; i < Model.Partida.Count; i++)
+                {
+
+                    <tr>
+                        <td>@Model.Partida[i].NomeTimeA.Nome</td>
+                        <td>
+
+
+                            @Html.EditorFor(s => Model.Partida[i].GolsA)
+
+                        </td>
+                        <td>X</td>
+
+                        <td>
+                            @Html.EditorFor(s => Model.Partida[i].GolsB)
+
+                        </td>
+                        <td>@Model.Partida[i].NomeTimeB.Nome</td>
+                    </tr>
+                }
+
+            </table>
+            <div id="formFooter">
+                <button type="submit" onclick="Salvar()" class="myButton">Cadastrar</button>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>

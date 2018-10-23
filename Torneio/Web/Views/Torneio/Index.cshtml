@@ -1,0 +1,31 @@
+﻿@model Logic.Model.TorneioModel
+
+<script src="~/Scripts/Controller/TorneioJS.js"></script>
+@{
+    var json = @Html.Raw(Json.Encode(Model));
+}
+
+<link href="~/Content/css/login.css" rel="stylesheet" />
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <form>
+
+
+            <div class="form-group has-success has-feedback">
+                <label class="col-xs-2 control-label" for="inputSuccess">Nome</label>
+                <div class="col-xs-10">
+                    <input type="text" value="@Model.Nome" id="Nome" class="form-control" placeholder="Nome">
+                </div>
+            </div>
+
+        
+
+
+            @Html.Hidden("model", json)
+        </form>
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <button type="submit" onclick="Salvar()" class="myButton">Cadastrar</button>
+        </div>
+    </div>
+</div>
